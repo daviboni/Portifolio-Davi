@@ -47,7 +47,7 @@ li{list-style-type: none;}
 
 body[status="js-active"] .occult {
     opacity: 0;
-    transition: all 1s;
+    transition: all .7s;
 }
   
 @media (prefers-reduced-motion) {
@@ -59,7 +59,7 @@ body[status="js-active"] .occult {
 body[status="js-active"] .show{
     opacity: 1;
     filter: blur(0);
-    transition: all 1s ease-in-out;
+    transition: all .7s ease-in-out;
 }
 
 
@@ -608,6 +608,7 @@ main{
 
 @media screen and (max-width: 850px){
     .content > p {width: 70%;}
+    .item:nth-child(1), .item:nth-child(1) .content, .container-projetos{border-radius: 10px;}
     .item:nth-child(2) {display: none;}
     .item:nth-child(4) {display: none;}
     .container-footer {
@@ -619,7 +620,11 @@ main{
     .content > h4 {line-height: 1.5;}
     .content > p {width: fit-content; padding: 1rem;}
     .content > div {gap: 0 1rem;}
-    .content > div > a {padding: 12px;}
+    .content > div > a {
+        padding: 8px 10px;
+        width: 120px;
+        justify-content: center;
+    }
     .btn-slides {
         right: 50%;
         width: initial;
@@ -630,6 +635,8 @@ main{
         transform: none;
     }
 }
+
+@media screen and (max-width: 400px){.item .content {background-color: rgba(0, 0, 0, 0.6);}}
 
 /* Sexta Section Contatos */
 .container-contatos{
