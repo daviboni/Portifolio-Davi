@@ -397,9 +397,6 @@ main{
         width: 150px;
         height: 150px;
     }
-    .card-tech:active {
-        transform: none;
-    }
 }
 @media screen and (max-width: 360px){
     .card-tech {width: 100%;}
@@ -546,7 +543,7 @@ main{
 }
 
 .color-visiet{
-    color: #039BE5;
+    color: #00A7E1;
 }
 
 .color-visiet-hub{
