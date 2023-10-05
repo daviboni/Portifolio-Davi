@@ -1,0 +1,769 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nanum+Gothic&family=Roboto&display=swap');
+
+@font-face {
+    font-family: cyber;
+    src: url(../fonts/cyber.otf) format("truetype");
+}
+
+:root{
+    --color-main: #c92381;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+*:focus{
+    outline: none !important;
+}
+
+html, body {font-size: 62.5%;}
+
+/* Class genericas */
+.wdt-min{width: 90%; margin: 0 auto; max-width: 1600px;}
+
+h1{font-size: 4.5rem;}
+
+h2{font-size: 2rem;}
+
+p, a{font-size: 1.8rem; text-decoration: none;}
+
+li{list-style-type: none;}
+
+.font-text{
+    color: white;
+    text-shadow: 3px 3px 6px rgb(8, 8, 9);
+}
+
+.font-cyber{font-family: cyber;}
+
+.filter-back{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+body[status="js-active"] .occult {
+    opacity: 0;
+    transition: all 1s;
+}
+  
+@media (prefers-reduced-motion) {
+    body[status="js-active"] .occult {
+        transition: none;
+    }
+}
+
+body[status="js-active"] .show{
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1s ease-in-out;
+}
+
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Roboto', Arial, Helve, sans-serif;
+    background: linear-gradient(45deg, #233b7c, #b16d86);
+    background-size: 300%;
+}
+
+.container{
+    height: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    background-image: url(../img/backgrounds/hero.svg);
+    background-position: top;
+    background-size: cover;
+    padding: .1px;
+    box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 2rem;
+}
+
+
+/* Primeira section Banner */
+.banner{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 85px);
+    justify-content: center;
+    text-align: center;
+}
+
+.banner > #tittle-main{
+    color: white;
+    font-weight: bolder;
+    text-shadow: 2px 2px 0px rgb(8, 8, 8);
+    margin-bottom: 2.5rem;
+    font-size: 4rem;
+}
+
+.banner > #tittle-main b{
+    width: 100%;
+    display: block;
+    font-size: 4.5rem;
+}
+
+.banner > div{
+    margin: 3rem auto;
+}
+
+.github-button, .linkedin-button {
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin: 0 2rem;
+    transition: all .3s ease-in-out;
+}
+
+.github-button:hover, .linkedin-button:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: scale(1.1);
+}
+
+.cor-git{
+    color: rgba(153, 0, 204, 0.5); 
+    box-shadow: 0 0 5px rgba(153, 0, 204, 0.5);
+  }
+.cor-link{
+    color: rgba(0, 119, 181, .5);
+    box-shadow: 0 0 5px rgba(0, 119, 181, .5);
+}
+  
+.github-button img, .linkedin-button img {
+    width: 30px;
+    margin-right: 10px;
+}
+  
+
+.banner > h2{
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 950px){
+    .wdt-min{
+        width: 100%;
+    }
+    .filter-back {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    /* RESPONSIVIDADE BANNER*/
+    .banner > #tittle-main{font-size: 3.5rem;}
+    .banner > #tittle-main b {font-size: 4rem;}
+}
+@media screen and (max-width: 550px){
+    .banner > #tittle-main{
+            font-size: 3rem;
+            line-height: 1.5;
+    }
+    .banner > #tittle-main b {
+        font-size: 3.2rem;
+    }
+    .github-button, .linkedin-button {
+        margin: 1rem;
+    }
+}
+
+
+/* Segunda Section Quem Sou  */
+.quem-sou{
+    width: 100%;
+    margin: 0 auto 20rem;
+    padding: 5rem 0;
+}
+
+.tittle-quem-sou{
+    text-align: center;
+    margin: 5rem 0 16rem;
+    font-size: 4rem;
+    padding: 2rem 0;
+}
+
+#block-text-quem-sou{display: none;}
+
+.text-quem-sou{
+    margin-bottom: 2.5rem;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* RESPONSIVIDADE QUEM SOU */
+@media screen and (max-width: 950px){
+    .quem-sou {margin: 0 auto 5rem;}
+    .tittle-quem-sou {margin: 4rem 0; font-size: 3rem;}
+    #block-text-quem-sou{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 750px){
+    .container{background-image: url(../img/backgrounds/hero-mobile.svg);}
+}
+
+
+/* Teceira Cection Experiência */
+.container-experiencia {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 10rem 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-experiencia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+    border-radius: 5px;
+    border: 2px solid;
+    box-shadow: 6px 4px 6px 3px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#card-perfil{
+    display: flex;
+    justify-content: center;
+    margin-top: -2.5rem;
+    transition: all .5s ease-in-out;
+}
+
+.face-perfil{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#perfil-front, #perfil-back{display: none;}
+
+
+@keyframes blink {
+    0% { filter: brightness(1);}
+    50% { opacity: .7;}
+    100% { filter: brightness(.3); }
+}
+
+
+#card-perfil[status="front"] #perfil-front{
+    display: flex;
+    z-index: 1; 
+    animation: blink .4s ease-in-out 5s infinite;
+}
+
+#card-perfil[status="back"] #perfil-back{
+    display: flex;
+    z-index: 2;
+}
+
+.foto-perfil{
+    display: flex;
+    width: 160px;
+    height: 150px;
+    border-radius: 20%;
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    position: absolute;
+}
+
+#ruido-perfil {opacity: 0.25;}
+
+
+.block-experiencia > #tittle-exp{
+    font-size: 4rem;
+    padding: 4rem 0;
+    margin-top: 8rem;
+}
+
+#card-exp{
+    padding: 0 2rem;
+}
+
+#card-exp dt{
+    font-size: 2rem;
+    padding: .5rem 0;
+    border-bottom: 2px solid black;
+    margin-bottom: 1rem;
+}
+
+#card-exp dd{
+    font-size: 1.8rem;
+    list-style: circle;
+}
+
+#card-exp dd::before {
+    content: "\2022"; 
+    color: #000;
+    margin-right: 0.5em;
+}
+.margem-exp{margin-bottom: 2.5rem;}
+.margem-exp-p{margin-bottom: .5rem;}
+
+/* RESPONSIVIDADE EXPERIECIA */
+@media screen and (max-width: 950px){
+    .container-experiencia { width: 95%; padding: 10rem 0;}
+}
+@media screen and (max-width: 500px){
+    .block-experiencia {padding: 4rem .5rem;}
+    #card-exp dt {font-size: 1.8rem;}
+    #card-exp dd {font-size: 1.6rem;}
+}
+
+
+/* Quarta Section Tecnologias */
+.conteiner-tech{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    align-items: center;
+    padding: 10rem 2rem;
+    margin: 2rem 0;
+    position: relative;
+    gap: 22rem 0;
+}
+
+.conteiner-tech >h3{
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    color: #fff;
+}
+
+.card-tech{
+    display: flex;
+    height: fit-content;
+    width: 33.33%;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-in-out;
+    position: relative;
+    padding: .1px;
+}
+
+.card-tech:hover {
+    transform: rotateY(180deg);
+}
+
+.face-tech{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.foto-tech{
+    width: 180px;
+    height: 170px;
+    cursor: pointer;
+}
+
+#tech-front{  
+    z-index: 1;
+}
+
+#tech-back{
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    z-index: 2;
+}
+
+/* RESPONSIVIDADE TECNOLOGIAS */
+@media screen and (max-width: 750px){
+    .card-tech {width: 50%;}
+    .foto-tech {
+        width: 150px;
+        height: 150px;
+    }
+    .card-tech:active {
+        transform: none;
+    }
+}
+@media screen and (max-width: 360px){
+    .card-tech {width: 100%;}
+}
+
+/* Quinta Section Projetos */
+.tittle-project{
+    font-size: 4rem;
+    text-align: center;
+    padding: 2rem 0;
+    margin: 15rem 0 5rem;
+    color: white;
+}
+
+
+.container-projetos{
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    margin: 5rem auto;
+    transform: translate(0,0);
+    padding: 50px;
+    background-color: #f5f5f5;
+}
+
+#slide{
+    width: max-content;
+    margin-top: 50px;
+}
+
+.item{
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    background-position: top center;
+    background-size: cover;
+    transition: 0.5s;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 20px;
+    box-shadow: 0 30px 50px #505050;
+}
+
+.item:nth-child(1){
+    left: 0;
+    top: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+}
+
+.item:nth-child(2){
+    left: calc(45% + 320px);
+    filter: brightness(1.1);
+
+}
+
+.item:nth-child(3){
+    left: calc(45% + 440px);
+    opacity: 0;
+}
+
+.item:nth-child(4){
+    left: calc(45% + 440px);
+    opacity: 0;
+        display: none;
+
+}
+
+.item:nth-child(5){
+    left: calc(45% + 880px);
+    opacity: 0;
+    display: none;
+}
+
+.item .content{
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    top: 50%;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5rem;
+    transform: translate(0, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+}
+
+.item:nth-child(1) .content{
+    display: flex;
+    z-index: 11111;
+    border-radius: 0;
+}
+
+.content > h4{
+    width: 40%;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    border-bottom: 2px solid black;
+    margin-bottom: 2rem;
+    animation: showcontent 1s ease-in-out 1 forwards;
+    transform: translate(0, 100px);
+    filter: blur(1000px);
+
+}
+
+.content > p{
+    width: 40%;
+    padding: 0 0 1rem;
+    line-height: 1.5;
+    animation: showcontent 1s ease-in-out 0.3s 1 forwards;
+    transform: translate(0, 100px);
+    filter: blur(1000px);
+}
+
+.content > div{
+    display: flex;
+    gap: 0 3rem;
+    animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+    transform: translate(0, 100px);
+    filter: blur(1000px);
+}
+
+.content > div > a{
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin: 2rem .5rem;
+    transition: all .3s ease-in-out;
+}
+
+.content > div > a:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: scale(1.1);
+}
+
+.color-visiet{
+    color: #039BE5;
+}
+
+.color-visiet-hub{
+    color: #77137c;
+}
+
+.cursor-not{
+    cursor: not-allowed;
+    color: red;
+}
+
+@keyframes showcontent {
+    from{
+        opacity: 0;
+        border: none;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }to{
+        opacity: 1;
+        transform: translate(0, 0);
+        filter: blur(0);
+    }
+}
+
+.btn-slides{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 30px;
+    z-index: 2222222;
+    text-align: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.btn-slides button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    transition: all .5s ease-in-out;
+    border: 1px solid transparent;
+}
+
+.btn-slides button:hover {
+    transform: scale(1.2)
+}
+
+.btn-slides button img{
+    width: 45px;
+    height: 45px;
+}
+
+/* RESPONSIVIDADE PROJETO */
+@media screen and (max-width: 1150px){
+    .container-projetos {width: 96%;}
+    .item:nth-child(2) {left: calc(100% - 230px);}
+    .item:nth-child(3) {display: none;}
+}
+
+@media screen and (max-width: 850px){
+    .content > p {width: 70%;}
+    .item:nth-child(2) {display: none;}
+    .item:nth-child(4) {display: none;}
+    .container-footer {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 700px){
+    .item .content {padding-left: 0; align-items: center; text-align: center;}
+    .content > h4 {line-height: 1.5;}
+    .content > p {width: fit-content; padding: 1rem;}
+    .content > div {gap: 0 1rem;}
+    .content > div > a {padding: 12px;}
+    .btn-slides {
+        right: 50%;
+        width: initial;
+        left: 50%;
+        bottom: 20px;        
+    }
+    .content > div > a:hover, .btn-slides button:hover{
+        transform: none;
+    }
+}
+
+/* Sexta Section Contatos */
+.container-contatos{
+    width: 100%;
+    max-width: 1300px;
+    height: fit-content;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-contatos > h3{
+    width: 50%;
+    font-size: 4rem;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.container-contatos > article{
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.block-contato-dig{
+    display: flex;
+    gap: 10px;
+    margin: 3rem 0;
+}
+
+#icons-links{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    margin-top: 5rem;
+}
+#icons-links > a{transition: all .3s ease-in-out;}
+#icons-links > a:hover{
+    transform: scale(1.1);
+}
+#icons-links > a > img{
+    height: 35px;
+    width: 35px;
+}
+
+/* RESPONSIVIDADE CONTATOS */
+@media screen and (max-width: 950px){
+    .block-experiencia > #tittle-exp,
+    .conteiner-tech >h3, 
+    .tittle-project, 
+    .container-contatos > h3 
+    {
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 700px){
+    .container-contatos{
+        flex-direction: column;
+    }
+    .container-contatos > h3 {width: 100%; margin-bottom: 5rem;}
+
+    .container-contatos > article {width: 70%; margin: 0 auto;}
+}
+@media screen and (max-width: 550px){
+    .container-contatos > article {width: 90%; margin: 0 auto;}
+    .block-contato-dig {display: block;}
+    .block-contato-dig p {margin-bottom: 1rem;}
+}
+@media screen and (max-width: 300px){
+    .container-contatos > article {
+        width: 100%;
+    }
+    .block-contato-dig p {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* CSS ICON SUBIR */
+.btn-subir {
+    position: fixed;
+    outline: none;
+    bottom: 40px;
+    right: 12px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    background: rgba(17, 17, 17, 0.5);
+    border: 1px solid #000;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.btn-subir img {
+    height: 30px;
+    transform: translateY(0);
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: subirDescer 1.5s infinite alternate;
+}
+
+@keyframes subirDescer {
+    0% {
+        transform: translateY(-3px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+@media screen and (max-width: 1050px) {
+    .btn-subir {
+        bottom: 30px;
+        right: 5.5px;
+        height: 40px;
+        width: 43px;
+    }
+    .btn-subir img {height: 28px;}
+}
+
+/* Estilos da barra de rolagem */
+::-webkit-scrollbar {width: 12px;}
+
+::-webkit-scrollbar-thumb {
+    background: #0277B5; /* Gradiente de fundo */
+    border-radius: 6px; /* Raio das bordas do polegar */
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.85);  /* Parte de trás da barra de rolagem */
+}

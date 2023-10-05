@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" type="image/x-icon" href="static/img/logo/a4pb_letra.svg">
+    <title>Página Não Encontrada</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/logo/a4pb.svg' %}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        * {margin: 0;padding: 0;box-sizing: border-box;font-family: 'Roboto', sans-serif;}
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main > div{width: 70%; margin: 0 auto; text-align: center;margin-bottom: 2rem;}
+        main > div > h1{font-size: 130px; color:#3F66DA}
+        main > div > p{font-size: 28px; color: #333C43; margin-bottom: 2rem; font-weight: bold}
+        main > div > a{font-size: 16px; color: purple; font-weight: bold; transition: background-color 0.4s ease;}
+        main > div > a:hover{display: block; transition: all ease 0.4s; transform: scale(1.1);}
+
+        @media screen and (max-width: 500px) {
+            main > div{width: 90%;}
+            main > div > h1{font-size: 130px;}
+            main > div > p{font-size: 26px;}
+            main > div > a{font-size: 17px;}
+        }
+        @media screen and (max-width: 300px) {
+            main > div{width: 99%;}
+            main > div > h1{font-size: 115px;}
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>OPS!</h1>
+            <p>
+                Foi identificado um erro e lamentavelmente a ação solicitada teve que ser cancelada.
+                Um relatório de erro automático já foi enviado à nossa equipe. Estamos empenhados em resolver
+                essa situação o mais rápido possível.
+            </p>
+            <a class="link" href="https://a4pb.com.br/">VOLTAR A TELA INICIAL</a>
+        </div>
+    </main>
+
+    <script>
+        var errorUrl = window.location.href;
+        var errorUrlElement = document.getElementById("error-url");
+        errorUrlElement.textContent = errorUrl;
+    </script>
+</body>
+</html>
