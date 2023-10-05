@@ -78,12 +78,3 @@ document.getElementById('btn-slides').onclick = function(){
         item0.style.backgroundImage = 'url(static/img/fotos/aprenser.webp)';
     }
 }
-
-// COMANDOS PARA OS CARDS VOLTAREM PRO LUGAR
-function toggleCard(card) {
-    if (card.classList.contains('flipped')) {
-        card.classList.remove('flipped');
-    } else {
-        card.classList.add('flipped');
-    }
-}
