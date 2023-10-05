@@ -217,9 +217,8 @@ main{
     }
 }
 @media screen and (max-width: 750px){
-    .container{background-image: url(../img/backgrounds/hero-mobile.svg);}
+    .container{background-image: url(../img/backgrounds/hero-mobile.webp);}
 }
-
 
 /* Teceira Cection Experiência */
 .container-experiencia {
@@ -551,7 +550,7 @@ main{
 }
 
 .color-visiet-hub{
-    color: #77137c;
+    color: #cd27d6;
 }
 
 .cursor-not{
