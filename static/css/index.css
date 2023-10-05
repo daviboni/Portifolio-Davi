@@ -3,6 +3,7 @@
 @font-face {
     font-family: cyber;
     src: url(../fonts/cyber.otf) format("truetype");
+    font-display: swap;
 }
 
 :root{
