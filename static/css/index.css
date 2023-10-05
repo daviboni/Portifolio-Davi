@@ -620,7 +620,7 @@ main{
 }
 @media screen and (max-width: 700px){
     .item .content {padding-left: 0; align-items: center; text-align: center;}
-    .content > h4 {line-height: 1.5;}
+    .content > h4 {width: fit-content; line-height: 1.5; border-bottom: 2px solid rgb(88, 88, 88);}
     .content > p {width: fit-content; padding: 1rem;}
     .content > div {gap: 0 1rem;}
     .content > div > a {
