@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davi Bonni</title>
+    <meta name="description" content="Apresentação das funcionalidades de integração manual do meu sistema web com a plataforma Qlik Sense">
+    <meta name="author" content="Davi Bonni">
+    <link rel="shortcut icon" type="image/x-icon" href="static/img/logos/db.svg">
+
+    <!-- css-->
+    <link rel="stylesheet" href="static/css/menu-hamburguer.css">
+    <link rel="stylesheet" href="static/css/nomuh.css">
+    <link rel="stylesheet" href="static/css/footer.css">
+</head>
+<body>
+    <header class="container-menu wdt-min" id="header-menu">
+        <nav id="nav-menu" status="hidden">
+            <div class="menu-bar">
+                <div id="block-logo-menu">
+                    <a href="/"><img id="icon-db-menu" src="static/img/logos/db.svg" alt="Icone Davi Bonni"></a>
+                </div>                    
+                <div id="icon-hamburger" onclick="StatusMenuNav(this);">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            
+            <div id="menu-options">
+                <ul>
+                    <li><a href="/" onclick="FecharMenu()">Inicio</a></li>
+                    <li><a href="#ecossistema-video" onclick="FecharMenu()">Apresentação</a></li>
+                    <li><a href="#codigo" onclick="FecharMenu()">Código</a></li>
+                    <li><a href="#formulario" onclick="FecharMenu()">Formulário</a></li>
+                    <li><a href="#views" onclick="FecharMenu()">Views</a></li>
+                    <li><a href="#html" onclick="FecharMenu()">HTML</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="causa max-wdt">
+            <h1 class="font-cyber" id="tittle-pg">Nomuh</h1>
+            <div>
+                <p class="text-causa">
+                    Esta página tem como objetivo oferecer uma visão geral do trabalho que realizei nesse projeto com fotos e vídeos logo <a href="#ecossistema-video">abaixo</a>. 
+                    Devido à natureza sensível de todo o código deste projeto e para preservar a atribuição intelectual do 
+                    algoritmo desenvolvido, não podemos disponibilizar o repositório publicamente.
+                </p>
+                <p class="text-causa">
+                    A Nomuh foi um projeto idealizado por mim ainda na faculdade como desenvolvimento para meu tcc, teve seu começo em 2021 e termino em Julho de 2023. 
+                    Seu principal objeto era disponibilizar a busca do usuário por medicamentos que fossem livres da sua restrição de alergênica. 
+                    Com isso desenvolvemos um algoritmo usando conceitos de Sistema de Recomendação.               
+                </p>
+                <p class="text-causa">
+                    No âmbito desse projeto, assumi a responsabilidade pelo desenvolvimento do front-end do site, 
+                    que envolveu a criação de mais de 25 telas distintas. Além disso, participei da integração de APIs, 
+                    como o Mercado Pago, e no gerenciamento de e-mails. A Nomuh representou mais do que um projeto acadêmico; 
+                    ela foi minha primeira incursão no mundo empresarial e tecnológico, proporcionando-me uma valiosa experiência 
+                    em busca de soluções para desafios de programação e empresariais.             
+                </p>
+            </div>      
+            
+        </section>
+        <section class="Demonstrativo" id="ecossistema-video">
+            <div class="block-demonstrativo max-wdt">
+                <div>
+                    <h2 class="font-text font-cyber">Demonstrativo</h2>
+                    <p class="font-text">
+                        O vídeo demonstra o site em funcionamento, cumprindo sua proposta de busca por medicamentos com base nas restrições de saúde. 
+                        Observe também as telas e a abordagem dos elementos                        
+                    </p>
+                </div>
+                <div id="block-video">
+                    <iframe src="static/videos/nomuh.mp4" frameborder="0" id="video-nomuh"></iframe>
+                </div>
+            </div>            
+        </section>
+
+        <p class="text-pre" id="codigo">
+            Nas próximas três imagens (Forms, Views, HTML), será possível obter uma visão mais detalhada da estrutura do meu código neste projeto. 
+            Essa estrutura é responsável pelo contato dos usuários através de e-mails com a plataforma."
+        </p>
+
+        <section class="section-pattern max-wdt" id="formulario">
+            <h2 class="font-cyber">Formulário</h2>            
+            <img src="static/img/fotos/Projetos/nomu-formulario.png" alt="Imagem de código das views">
+            <p>A imagem ilustra a organização e implementação do formulário de contato por e-mail na plataforma</p>
+        </section> 
+
+        <section class="section-pattern max-wdt" id="views">
+            <h2 class="font-cyber">Views</h2>            
+            <img src="static/img/fotos/Projetos/nomuh-views-email.png" alt="Imagem de código das views">
+            <p>Implementação do código da view responsável por permitir que os usuários entrem em contato com a plataforma</p>
+        </section> 
+
+        <section class="section-pattern max-wdt" id="html">
+            <h2 class="font-cyber">HTML</h2>            
+            <img src="static/img/fotos/Projetos/nomuh-html.png" alt="Imagem código JavaScript">
+            <p>Integração do formulário de contato por e-mail ao código HTML, conforme mostrado na imagem acima</p>
+        </section>      
+
+    </main>
+    <aside id="icons-pg" style="display: none;">
+        <button class="btn-subir">
+            <img src="static/img/icons/seta-cima.png" alt="Icon de seta para cima fornecido por Arkinasi via https://www.flaticon.com/br/autores/arkinasi">
+        </button>
+    </aside>
+    <footer>
+        <div class="container-footer">
+            <div class="footer-logo">
+                <img src="static/img/logos/db.svg" alt="Logo Davi Bonni">
+            </div>        
+            <div id="block-certificados">
+                <h3 class="font-text">Certificados</h3>
+                <div>
+                    <a href="https://www.udemy.com/certificate/UC-3c2039e8-18b2-4864-a5d2-2c19d1d3c04e/" target="_blank">Phython</a>
+                    <a href="https://www.udemy.com/certificate/UC-e216c08c-a65c-42a8-ada8-47c540e6819d/" target="_blank">Django Framework</a>
+                    <a href="https://www.udemy.com/certificate/UC-74e2c218-313e-44d7-b284-2b92109719c4/" target="_blank">JavaScript</a>
+                    <a href="https://www.udemy.com/certificate/UC-aede1cd6-bc78-4f2a-afec-c7befc058ec4/" target="_blank">Analista BI</a>
+                    <a href="https://www.udemy.com/certificate/UC-454178b1-a91d-4054-99bd-e7c76705e2b2/" target="_blank">Qlik Sense</a>
+                    <a href="https://www.udemy.com/certificate/UC-7864a3bb-2071-4eaf-a219-30975c630cb3/" target="_blank">Inglês</a>
+                </div>
+            </div>
+            <div id="icons-links-footer">
+                <a href="https://api.whatsapp.com/send?phone=5583999554197&text=Ol%C3%A1%2C%20Davi.%20Visitei%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar" target="_blank">
+                    <img src="static/img/icons/telefone.png" alt="Logo WhatsApp fornecido por Freepik via https://www.flaticon.com/br/autores/freepik">
+                </a>
+                <a href="https://www.linkedin.com/in/davi-costa-bonif%C3%A1cio-894921138/" target="_blank">
+                    <img src="static/img/icons/linkedin.svg" alt="Icone do LinkedIn">
+                </a>
+                <a href="https://github.com/daviboni/Portifolio-Davi" target="_blank">
+                    <img src="static/img/icons/github.svg" alt="Icone do GitHub">
+                </a>
+                <a href="https://www.instagram.com/dtechwebsite/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank">
+                    <img src="static/img/icons/instagram.png" alt="Logo Instagram fornecido por Freepik via https://www.flaticon.com/br/autores/freepik">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="static/js/menu.js" type="text/javascript"></script>
+    <script src="static/js/icon-asside.js" type="text/javascript"></script>
+</body>
+</html>

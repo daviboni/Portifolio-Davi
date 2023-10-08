@@ -35,7 +35,26 @@ const cardPerfil = document.getElementById('card-perfil');
         setTimeout(alternarStatus, 6000);
 
 
+// COMANDOS PARA TROCAS AUTOMATICAMENTE DOS CARDS DE TECNOLOGIA
+function toggleFlipClass() {
+    const cards = document.querySelectorAll('.card-tech');
+    const currentCard = document.querySelector('.card-tech.flip');
 
+    if (currentCard) {
+        const currentIndex = Array.from(cards).indexOf(currentCard);
+        currentCard.classList.remove('flip');
+        
+        if (currentIndex < cards.length - 1) {
+            cards[currentIndex + 1].classList.add('flip');
+        } else {
+            cards[0].classList.add('flip');
+        }
+    } else {
+        cards[0].classList.add('flip');
+    }
+    }
+
+    setInterval(toggleFlipClass, 5000);
 
 // COMANDOS PARA TROCA NOS SLIDES DO CONTAINER PROJETOS
 document.getElementById('next').onclick = function(){

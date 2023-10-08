@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nanum+Gothic&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 @font-face {
     font-family: cyber;
@@ -44,7 +44,6 @@ li{list-style-type: none;}
 .filter-back{
     background-color: rgba(0, 0, 0, 0.4);
 }
-
 
 body[status="js-active"] .occult {
     opacity: 0;
@@ -148,6 +147,7 @@ main{
   
 .github-button img, .linkedin-button img {
     width: 30px;
+    height: 30px;
     margin-right: 10px;
 }
   
@@ -366,6 +366,10 @@ main{
     transform: rotateY(180deg);
 }
 
+.flip {
+    transform: rotateY(180deg);
+}
+
 .face-tech{
     width: 100%;
     height: 100%;
@@ -517,16 +521,41 @@ main{
     filter: blur(1000px);
 }
 
-.content > div{
+.block-tech-projetos{
+    width: 40%;
+    margin: .5rem 0;
+}
+
+.block-tech-projetos h5{
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+.itens-logos-projetos{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+    animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+    transform: translate(0, 100px);
+    filter: blur(1000px);}
+
+.itens-logos-projetos img{
+    width: 35px;
+    height: 35px;
+}
+
+.btn-links-projetos{
     display: flex;
     gap: 0 3rem;
-    animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+    animation: showcontent 1s ease-in-out 0.9s 1 forwards;
     transform: translate(0, 100px);
     filter: blur(1000px);
 }
 
-.content > div > a{
-    width: fit-content;
+.btn-links-projetos > a{
+    width: 140px;
+    justify-content: center;
     display: inline-flex;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.8);
@@ -538,7 +567,7 @@ main{
     transition: all .3s ease-in-out;
 }
 
-.content > div > a:hover{
+.btn-links-projetos > a:hover{
     background-color: rgba(0, 0, 0, 0.9);
     transform: scale(1.1);
 }
@@ -588,6 +617,7 @@ main{
     background-color: transparent;
     transition: all .5s ease-in-out;
     border: 1px solid transparent;
+    cursor: pointer;
 }
 
 .btn-slides button:hover {
@@ -619,8 +649,9 @@ main{
     .item .content {padding-left: 0; align-items: center; text-align: center;}
     .content > h4 {width: fit-content; line-height: 1.5; border-bottom: 2px solid rgb(88, 88, 88);}
     .content > p {width: fit-content; padding: 1rem;}
-    .content > div {gap: 0 1rem;}
-    .content > div > a {
+    .itens-logos-projetos{padding: .5rem 0;}
+    .btn-links-projetos {gap: 0 1rem;}
+    .btn-links-projetos > a {
         padding: 10px;
         width: 130px;
         justify-content: center;
@@ -631,12 +662,17 @@ main{
         left: 50%;
         bottom: 20px;        
     }
-    .content > div > a:hover, .btn-slides button:hover{
+    .btn-links-projetos > a:hover, .btn-slides button:hover{
         transform: none;
     }
 }
 
-@media screen and (max-width: 400px){.item .content {background-color: rgba(0, 0, 0, 0.6);}}
+@media screen and (max-width: 400px){
+    .item .content {background-color: rgba(0, 0, 0, 0.6);}
+    .btn-links-projetos > a {
+        width: 110px;
+    }
+}
 
 /* Sexta Section Contatos */
 .container-contatos{
