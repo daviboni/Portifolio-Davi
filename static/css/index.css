@@ -533,8 +533,7 @@ main{
 .itens-logos-projetos{
     display: flex;
     width: 40%;
-    justify-content: center;
-    gap: 2rem;
+    justify-content: space-evenly;
     padding: 1rem 0;
     animation: showcontent 1s ease-in-out 0.6s 1 forwards;
     transform: translate(0, 100px);

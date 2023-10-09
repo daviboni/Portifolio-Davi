@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davi Bonni</title>
+    <meta name="description" content="Apresentação das funcionalidades de integração manual do meu sistema web com a plataforma Qlik Sense">
+    <meta name="author" content="Davi Bonni">
+    <link rel="shortcut icon" type="image/x-icon" href="static/img/logos/db.svg">
+
+    <!-- css-->
+    <link rel="stylesheet" href="static/css/menu-hamburguer.css">
+    <link rel="stylesheet" href="static/css/ecossistema.css">
+    <link rel="stylesheet" href="static/css/footer.css">
+</head>
+<body>
+    <header class="container-menu wdt-min" id="header-menu">
+        <nav id="nav-menu" status="hidden">
+            <div class="menu-bar">
+                <div id="block-logo-menu">
+                    <a href="/"><img id="icon-db-menu" src="static/img/logos/db.svg" alt="Icone Davi Bonni"></a>
+                </div>                    
+                <div id="icon-hamburger" onclick="StatusMenuNav(this);">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            
+            <div id="menu-options">
+                <ul>
+                    <li><a href="/" onclick="FecharMenu()">Inicio</a></li>
+                    <li><a href="#apresentacao" onclick="FecharMenu()">Apresentação</a></li>
+                    <li><a href="#html" onclick="FecharMenu()">HTML</a></li>
+                    <li><a href="#css" onclick="FecharMenu()">CSS</a></li>
+                    <li><a href="#js" onclick="FecharMenu()">JavaScript</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="causa max-wdt">
+            <h1 class="font-cyber" id="tittle-pg">Ecossistema de Inovação</h1>
+            <div>
+                <p class="text-causa">
+                Esta página tem como objetivo oferecer uma visão geral do trabalho que realizei nesse projeto. Devido à natureza 
+                sensível dos dados contidos nos painéis QVF do contratante, não é possível divulgar o repositório ou mais detalhes específicos.
+                </p>
+                <p class="text-causa">
+                    Este projeto envolveu a criação de painéis no Qlik Sense com o propósito de mapear o desenvolvimento de 
+                    diversos setores em diferentes regiões. Minha contribuição foi a integração desses painéis a um sistema web, onde coletei 
+                    manualmente os dados e filtros necessários através da API de integração do Qlik Sense.                
+                </p>
+            </div>      
+            
+        </section>
+        <section class="Demonstrativo">
+            <div class="block-demonstrativo max-wdt">
+                <div>
+                    <h2 class="font-text font-cyber">Demonstrativo</h2>
+                    <p class="font-text">
+                        O vídeo demonstra o funcionamento do sistema em um ambiente local. 
+                        É importante destacar que <strong>os dados apresentados no vídeo são fictícios</strong> e utilizados apenas para ilustrar o 
+                        funcionamento do que foi desenvolvido.
+                    </p>
+                </div>
+                <iframe src="static/videos/Ecossistema.mp4" frameborder="0"></iframe>           
+            </div>            
+        </section>
+        <section class="section-js max-wdt">
+            <h2 class="font-cyber">JavaScript </h2>            
+            <img src="static/img/fotos/Projetos/ecossistema-javascript.png" alt="Imagem código JavaScript">
+            <p>Na imagem é possível ver um pouco do código de busca dos dados do QVF</p>
+        </section>      
+
+    </main>
+    <aside id="icons-pg" style="display: none;">
+        <button class="btn-subir">
+            <img src="static/img/icons/seta-cima.png" alt="Icon de seta para cima fornecido por Arkinasi via https://www.flaticon.com/br/autores/arkinasi">
+        </button>
+    </aside>
+    <footer>
+        <div class="container-footer">
+            <div class="footer-logo">
+                <img src="static/img/logos/db.svg" alt="Logo Davi Bonni">
+            </div>        
+            <div id="block-certificados">
+                <h3 class="font-text">Certificados</h3>
+                <div>
+                    <a href="https://www.udemy.com/certificate/UC-3c2039e8-18b2-4864-a5d2-2c19d1d3c04e/" target="_blank">Phython</a>
+                    <a href="https://www.udemy.com/certificate/UC-e216c08c-a65c-42a8-ada8-47c540e6819d/" target="_blank">Django Framework</a>
+                    <a href="https://www.udemy.com/certificate/UC-74e2c218-313e-44d7-b284-2b92109719c4/" target="_blank">JavaScript</a>
+                    <a href="https://www.udemy.com/certificate/UC-aede1cd6-bc78-4f2a-afec-c7befc058ec4/" target="_blank">Analista BI</a>
+                    <a href="https://www.udemy.com/certificate/UC-454178b1-a91d-4054-99bd-e7c76705e2b2/" target="_blank">Qlik Sense</a>
+                    <a href="https://www.udemy.com/certificate/UC-7864a3bb-2071-4eaf-a219-30975c630cb3/" target="_blank">Inglês</a>
+                </div>
+            </div>
+            <div id="icons-links-footer">
+                <a href="https://api.whatsapp.com/send?phone=5583999554197&text=Ol%C3%A1%2C%20Davi.%20Visitei%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar" target="_blank">
+                    <img src="static/img/icons/telefone.png" alt="Logo WhatsApp fornecido por Freepik via https://www.flaticon.com/br/autores/freepik">
+                </a>
+                <a href="https://www.linkedin.com/in/davi-costa-bonif%C3%A1cio-894921138/" target="_blank">
+                    <img src="static/img/icons/linkedin.svg" alt="Icone do LinkedIn">
+                </a>
+                <a href="https://github.com/daviboni/Portifolio-Davi" target="_blank">
+                    <img src="static/img/icons/github.svg" alt="Icone do GitHub">
+                </a>
+                <a href="https://www.instagram.com/dtechwebsite/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank">
+                    <img src="static/img/icons/instagram.png" alt="Logo Instagram fornecido por Freepik via https://www.flaticon.com/br/autores/freepik">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="static/js/menu.js" type="text/javascript"></script>
+    <script src="static/js/icon-asside.js" type="text/javascript"></script>
+</body>
+</html>
