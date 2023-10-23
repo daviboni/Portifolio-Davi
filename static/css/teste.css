@@ -627,8 +627,6 @@ color: var(--color-emphasis);
     .block-perfil-inside {width: 90%; margin: 5rem auto 0;}
     .block-information-inside p {text-align: left;}
     .tittle-inside-back {display: none;}
-    .block-information-inside > ul > li {display: block; width: 100%; justify-content: flex-start;}
-
     .block-information-inside > ul {
         display: flex;
         flex-wrap: wrap;
@@ -646,6 +644,7 @@ color: var(--color-emphasis);
 @media screen and (max-width: 400px){
     .tittle-inside-front {font-size: 3rem;}
     .block-information-inside p {text-align: justify;}
+    .block-information-inside > ul > li {display: block;}
     .block-information-inside > h4 {text-align: center;}
     .tittle-cards {font-size: 2.5rem;}
     #btn-cards > a {font-size: 1.4rem; width: 40%}
@@ -976,12 +975,3 @@ color: var(--color-emphasis);
     .block-text-contaos{flex-direction: column; text-align: center;}
 }
 
-@media screen and (min-width: 950px) {
-    /* Estilos da barra de rolagem */
-    ::-webkit-scrollbar {background-color: var(--color-secund);}
-
-    ::-webkit-scrollbar-thumb {
-        
-        background-color: var(--color-emphasis);
-    }
-}

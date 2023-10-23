@@ -1,4 +1,3 @@
-// COMANDOS PARA ATUALIZAR O STATUS DO CONTAINER, INCLUIR E EXCLUIR O FULL-SCREEN E UP-SECTION, COLOCAR OVERFLOW-Y NO FULL-SCREEN
 document.addEventListener("DOMContentLoaded", function() {
     const sections = document.querySelectorAll('.expanded');
     const container = document.querySelector('.container');

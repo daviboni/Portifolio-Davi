@@ -4,353 +4,330 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Davi Bonni</title>
-    <meta name="description" content="Explore o portfólio de Davi Bonni, um talentoso desenvolvedor web especializado na criação de sites estáticos. Descubra seu trabalho e projetos impressionantes.">
+    <meta name="description" content="Explore o portfólio de Davi Bonni, desenvolvedor web especializado na criação de sites estáticos. Descubra seu trabalho e projetos impressionantes.">
     <meta name="author" content="Davi Bonni">
     <link rel="shortcut icon" type="image/x-icon" href="static/img/logos/db.svg">
-    
-    <link rel="preload" href="static/fonts/cyber.otf" as="font" type="font/otf" crossorigin>
-    <link rel="preload" as="image" href="static/img/backgrounds/hero.svg">
 
 
-    <!-- css-->
-    <link rel="stylesheet" href="static/css/menu.css">
-    <link rel="stylesheet" href="static/css/index.css">    
-    <link rel="stylesheet" href="static/css/linha-tempo.css">
-    <link rel="stylesheet" href="static/css/footer.css">
-    
+    <link rel="stylesheet" href="static/css/index.css">
 </head>
-<body status="js-not">
-    <div class="container">
-        <header class="container-menu wdt-min" id="header-menu">
-            <nav id="nav-menu" status="hidden">
-                <div class="menu-bar">
-                    <div id="block-logo-menu">
-                        <img id="icon-db-menu" src="static/img/logos/db.svg" alt="Icone Davi Bonni">
-                    </div>                    
-                    <div id="icon-hamburger" onclick="StatusMenuNav(this);">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+
+<body>
+    <div class="container" status="hidden">
+          <section class="block section-1" id="section-1">
+              <img src="static/img/fotos/davi.svg" alt="Foto Davi">
+              <div id="block-presentation">
+                    <p>Olá! Seja Bem-Vindo</p>
+                    <h1 id="title-name">
+                        <span class="span-tittle" id="first-span">Me Chamo Davi Bonni</span>
+                        <span class="span-tittle" id="secund-span">E Sou - Web Design</span>
+                    </h1>
+              </div>
+          </section>
+          <section class="block expanded section-2" id="section-2">
+              <div class="block-tittle">
+                  <h2>Sobre Mim</h2>
+                  <div>
+                      <h3 class="tittle-first">Sobre</h3>
+                      <h3 class="tittle-last">Mim</h3>
+                  </div>
+              </div>
+              <div class="container-information">
+                <img src="static/img/icons/btn-close.png" alt="Botão de Fechar Sobre Mim" class="btn-close">
+                <div class="block-tittle-insede">
+                    <h2 class="tittle-inside-back">Sobre Mim</h2>
+                    <h3 class="tittle-inside-front">Sobre <span>Mim</span></h3>
+                </div>
+                <div class="block-icon-inside">
+                    <span></span>
+                    <img src="static/img/icons/icon-card-perfil.png" alt="icone de card perfil">
+                    <span></span>
+                </div>
+                <div class="block-perfil-inside win-max-size">
+                    <img src="static/img/fotos/davi-pc.jpg" alt="Foto Davi PC">
+                    <div class="block-information-inside">
+                        <h4><img src="static/img/icons/icon-perfil.png" alt="Icon de Perfil"> Informações Pessoais</h4>
+                        <p>Em minha breve trajetória profissional, participei de 
+                            diversos projetos na área de tecnologia, com foco predominante no desenvolvimento front-end web, onde sinto-me 
+                            mais à vontade para aplicar minhas habilidades.
+                        </p>
+                        <ul>
+                            <li>Nome: <span>Davi Bonifácio</span></li>
+                            <li>Telefone: <span>(83) 99955-4197</span></li>
+                            <li>Natural: <span>Brasília - DF</span></li>
+                            <li>Residente: <span>João Pessoa - PB</span></li>
+                            <li>Freelance / Contratação: <span>Disponível</span></li>                          
+                            <li>Email: <span>davidbonni_@gmail.com</span></li>                          
+                            
+                          </ul>
+                          
+                        <a href="static/others/curriculo/Curriculo-DaviBonni.pdf" target="_blank">Visualizar CV</a>
                     </div>
                 </div>
-                
-                <div id="menu-options">
-                    <ul>
-                        <li><a href="#sobre-mim" onclick="FecharMenu()">Sobre Mim</a></li>
-                        <li><a href="#experiencia" onclick="FecharMenu()">Experiências</a></li>
-                        <li><a href="#tecnologias" onclick="FecharMenu()">Tecnologias</a></li>
-                        <li><a href="#projetos" onclick="FecharMenu()">Projetos</a></li>
-                        <li><a href="#contatos" onclick="FecharMenu()">Contatos</a></li>
-
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <section class="banner wdt-min filter-back">
-            <h1 id="tittle-main" class="font-cyber">Davi Bonni <b>Front-end Web Developer</b></h1>
-            <div>
-                <a href="https://www.linkedin.com/in/davi-costa-bonif%C3%A1cio-894921138/" class="linkedin-button cor-link" target="_blank">
-                    <img src="static/img/icons/linkedin.svg" alt="Logo do LinkedIn">
-                    <span class="linkedin-text">LinkedIn</span>
-                  </a>
-                <a href="https://github.com/daviboni/Portifolio-Davi" class="github-button cor-git" target="_blank">
-                    <img src="static/img/icons/github.svg" alt="Logo do GitHub">
-                    <span class="github-text">GitHub</span>
-                </a>
-            </div>
-        </section>
-    </div> 
-    <main class="wdt-min filter-back">
-        <section class="quem-sou occult" id="sobre-mim">
-            <h2 class="tittle-quem-sou font-cyber font-text occult">Sobre Mim</h1>
-            <div id="block-text-quem-sou">
-                <p class="text-quem-sou occult">Olá,</p>
-                <p class="text-quem-sou occult">
-                    Meu nome é Davi Bonifácio, sou natural de Brasília, atualmente residindo em João Pessoa. Em minha breve trajetória profissional, participei de diversos projetos na área de tecnologia, com foco predominante no desenvolvimento front-end, onde sinto-me mais à vontade para aplicar meu talento. Navegando pelo meu portfólio, você poderá explorar alguns dos trabalhos e projetos nos quais estive envolvido.
-                </p>
-                <p class="text-quem-sou occult">
-                    Se estiver em busca de um parceiro para um projeto web empolgante ou desejar discutir como posso contribuir, não hesite em entrar em contato. Estou à disposição para colaborar.
-                </p>
-            </div>            
-            <div class="container-linha occult">
-                <span class="linha-tempo border-linha-top">
-                    <div class="block-linha direction-reverse">
-                        <span class="linha-liga justify-end" id="span-1"></span>
-                        <p class="ano-linha font-cyber" id="ano-1">1993</p>
-                        <p class="text-linha n-space">Nascido em Brasília</p>                            
-                    </div>                        
-                </span>
-                <span class="linha-tempo alien-start">
-                    <div class="block-linha m-right">
-                        <span class="linha-liga justify-start" id="span-2"></span>
-                        <p class="ano-linha font-cyber" id="ano-2">2009</p>
-                        <p class="text-linha n-space">Residio para João Pessoa</p>                            
-                    </div>                        
-                </span>
-                <span class="linha-tempo">
-                    <div class="block-linha direction-reverse">
-                        <span class="linha-liga justify-end" id="span-3"></span>
-                        <p class="ano-linha font-cyber" id="ano-3">2012</p>
-                        <p class="text-linha">Certificou-se como Técnico em Operador de Informática</p>                            
-                    </div>                        
-                </span>
-                <span class="linha-tempo alien-start">
-                    <div class="block-linha m-right">
-                        <span class="linha-liga justify-start" id="span-4"></span>
-                        <p class="ano-linha font-cyber" id="ano-4">2021</p>
-                        <p class="text-linha">Formou-se em <strong>Ciências da Computação</strong> pelo Centro Universitário de João Pessoa.</p>                            
-                    </div>                        
-                </span>
-                <span class="linha-tempo">
-                    <div class="block-linha direction-reverse">
-                        <span class="linha-liga justify-end" id="span-5"></span>
-                        <p class="ano-linha font-cyber" id="ano-5">2022</p>
-                        <p class="text-linha">Criou sua própria startup, chamada Nomuh, Usando Técnicas de Machine Learning</p>                            
-                    </div>                        
-                </span>
-                <span class="linha-tempo alien-start border-linha-bottom">
-                    <div class="block-linha m-right">
-                        <span class="linha-liga justify-start" id="span-6"></span>
-                        <p class="ano-linha font-cyber" id="ano-6">2023</p>
-                        <p class="text-linha">Atuando como Freelancer, Criando Sites Estáticos para Empresas e Associações</p>                            
-                    </div>                        
-                </span>
-            </div>
-        </section>
-        <section class="container-experiencia" id="experiencia">
-            <div class="block-experiencia occult">
-                <div id="card-perfil" status="front">
-                    <div class="face-perfil" id="perfil-front">
-                        <img src="static/img/fotos/perfil-ia.webp" alt="Foto Ilustrativo de Davi Bonni" class="foto-perfil">
+                <div  id="container-cards">
+                    <div id="btn-cards">
+                        <a class="btn-active" id="btn-education">Educação</a>
+                        <a class="btn-not-active" id="btn-experience">Experiências</a>
+                        <a class="btn-not-active" id="btn-skills">Habilidades</a>
                     </div>
-                    <div class="face-perfil" id="perfil-back" >
-                        <img src="static/img/fotos/perfil.webp" alt="Foto Real de Davi Bonni" class="foto-perfil">
-                        <img src="static/img/fotos/ruido-animado.gif" alt="" class="foto-perfil" id="ruido-perfil">
+                    <div class="block-cards" id="block-card-education">
+                        <dl id="card-education">
+                            <h4 class="tittle-cards">Educação</h4>
+                            <dt class="subtittle-cards">Bacharelado - Ciências da Computação</dt>
+                                <dd id="span-dd-1">Julho de 2017 - Julho de 2021</dd><br>
+                                <dd class="margem-cards">
+                                    - Média Geral: 8,3
+                                </dd><br>
+                                <dd class="margem-cards">
+                                    - TCC publicado pela faculdade por sua excelência
+                                </dd>
+                            <dt class="subtittle-cards">Certificado - Web Front-End</dt>
+                                <dd id="span-dd-1">89 Horas  | Junho de 2023</dd><br>
+                                <dd class="margem-cards">
+                                    - Estrutura Semântica
+                                </dd><br>
+                                <dd class="margem-cards">
+                                    - Sites Responsivos, Animados e Transições
+                                </dd><br>
+                                <dd class="margem-cards">
+                                    - Controle de DOM, Funções e Tratamentos
+                                </dd><br>
+                            <dt class="subtittle-cards">Certificado - Desenvolvedor Qlik Sense</dt>
+                                <dd id="span-dd-1">15.5 Horas  | Fevereiro de 2023</dd><br>
+                                <dd class="margem-cards">
+                                    - Integração de Paineis com Websites
+                                </dd><br>
+                                <dd class="margem-cards">
+                                    - Visualização de Dados Interativos
+                                </dd><br>
+                            <dt class="subtittle-cards">Certificado - Django Framework</dt>
+                                <dd id="span-dd-1">36 Horas  | Junho de 2021</dd><br>
+                                <dd class="margem-cards">
+                                    - Controle de Views
+                                </dd><br>
+                                <dd class="margem-cards">
+                                    - Desenvolvimento Front-End
+                                </dd><br>
+                                <dd class="margem-cards">
+                                    - APIs Web
+                                </dd>
+                            
+                        </dl>                                         
                     </div>
-                </div>                    
-                <h3 class="font-cyber" id="tittle-exp">Experiências</h3>
-                <dl id="card-exp">
-                    <dt>Nome: Davi Bonifácio</dt>
-                    <dd class="margem-exp-p">Idade: 30 anos</dd>
-                    <dd class="margem-exp-p">Formação: Ciências da Computação</dd>
-                    <dd class="margem-exp">Ramo: Dev Front-End de interfaces web</dd>
-
-                    <dt>Nomuh | Junho de 2021</dt>
-                    <dd class="margem-exp-p">Sócio fundador da empresa</dd>
-                    <dd class="margem-exp-p">Desenvolvedor front-end do site</dd>
-                    <dd class="margem-exp">Representante comercial</dd>
-
-                    <dt>Associação A4PB | Agosto de 2023</dt>
-                    <dd class="margem-exp-p">Desenvolvedor do website</dd>
-                    <dd class="margem-exp-p">Edição de vídeo</dd>                    
-                    <dd class="margem-exp">Animated logo maker</dd>
-
-                    <dt>Estágio Supervisionado - Unipê | Fevereiro de 2021</dt>
-                    <dd class="margem-exp-p">Criacão de conteúdos educativos de computação para as redes sociais</dd>
-                    <dd class="margem-exp-p">Realização de testes de peças computacionais</dd>                    
-                    <dd class="margem-exp">Montagem de computadores</dd>
-                </dl>                    
-            </div>
-            <a href="static/others/curriculo/Curriculo-DaviBonni.pdf" class="occult" id="link-cv" download >Baixar cv</a>
-        </section>
-        <section class="conteiner-tech occult" id="tecnologias">
-            <h3 class="font-cyber" id="tittle-tech">Tecnologias</h3>
-            <div class="card-tech" id="card-tech-2">
-                <div class="face-tech" id="tech-front">
-                    <img src="static/img/logos/tech-css.webp" alt="Icon CSS" class="foto-tech">
+                    <div class="block-cards" id="block-card-exp" style="display: none;">                        
+                        <dl id="card-exp" >
+                            <h4 class="tittle-cards">Experiência</h4>   
+                            <dt class="subtittle-cards">Nomuh</dt>
+                                <dd id="span-dd-1">Junho de 2021</dd><br>
+                                <dd class="margem-cards">- Sócio fundador da empresa</dd><br>
+                                <dd class="margem-cards">- Desenvolvedor front-end do site</dd><br>
+                                <dd class="margem-cards">- Representante comercial</dd><br>
+        
+                            <dt class="subtittle-cards">Associação A4PB</dt>
+                                <dd id="span-dd-1">Agosto de 2023</dd><br>
+                                <dd class="margem-cards">- Desenvolvedor do website</dd><br>
+                                <dd class="margem-cards">- Edição de vídeo</dd><br>                
+                                <dd class="margem-cards">- Animated logo maker</dd><br>
+        
+                            <dt class="subtittle-cards">Estágio Supervisionado - Unipê | Fevereiro de 2021</dt><br>
+                                <dd id="span-dd-1">Janeiro de 2020</dd><br>
+                                <dd class="margem-cards">- Criacão de conteúdos educativos de computação para as redes sociais</dd><br>
+                                <dd class="margem-cards">- Realização de testes de peças computacionais</dd><br>                    
+                                <dd class="margem-cards">- Montagem de computadores</dd><br>
+                        </dl>
+                    </div>
+                    <div class="block-cards" id="block-card-skills" style="display: none;">
+                        <div id="card-skills">
+                            <h4 class="tittle-cards">Habilidades</h4>
+                            <div class="block-skills"> 
+                                <div class="skill">
+                                    <p>HTML</p>
+                                    <div class="stars">★★★★☆</div>
+                                </div>
+                                <div class="skill">
+                                    <p>CSS</p>
+                                    <div class="stars">★★★★☆</div>
+                                </div>
+                                <div class="skill">
+                                    <p>JavaScript</p>
+                                    <div class="stars">★★★★☆</div>
+                                </div>
+                                <div class="skill">
+                                    <p>Qlik Sense</p>
+                                    <div class="stars">★★★★☆</div>
+                                </div>
+                                <div class="skill">
+                                    <p>Django</p>
+                                    <div class="stars">★★★★☆</div>
+                                </div>
+                                <div class="skill">
+                                    <p>Python</p>
+                                    <div class="stars">★★★★☆</div>
+                                </div>                                
+                                <div class="skill">
+                                    <p>React</p>
+                                    <div class="stars">★★★☆☆</div>
+                                </div>                                                               
+                            </div>                            
+                        </div>     
+                    </div>             
                 </div>
-                <div class="face-tech" id="tech-back">
-                    <img src="static/img/logos/tech-css-back.webp" alt="Descrição das funções exercidas em CSS" class="foto-tech">
-                </div>                
-            </div>
-            <div class="card-tech " id="card-tech-1">
-                <div class="face-tech" id="tech-front">
-                    <img src="static/img/logos/tech-html.webp" alt="Icon HTML 5" class="foto-tech">
-                </div>
-                <div class="face-tech" id="tech-back">
-                    <img src="static/img/logos/tech-html-back.webp" alt="Descrição das funções exercidas em html" class="foto-tech">
-                </div>
-            </div>
-            <div class="card-tech" id="card-tech-3">
-                <div class="face-tech" id="tech-front">
-                    <img src="static/img/logos/tech-js.webp" alt="Icon JavaScript" class="foto-tech">
-                </div>
-                <div class="face-tech" id="tech-back">
-                    <img src="static/img/logos/tech-js-back.webp" alt="Descrição das funções exercidas em JavaScript" class="foto-tech">
-                </div>
-            </div> 
-            <div class="card-tech" id="card-tech-4">
-                <div class="face-tech" id="tech-front">
-                    <img src="static/img/logos/tech-djago.webp" alt="Icon Django" class="foto-tech">
-                </div>
-                <div class="face-tech" id="tech-back">
-                    <img src="static/img/logos/tech-djago-back.webp" alt="Descrição das funções exercidas em Djago" class="foto-tech">
-                </div>
-            </div>
-            <div class="card-tech" id="card-tech-4">
-                <div class="face-tech" id="tech-front">
-                    <img src="static/img/logos/tech-qlik.webp" alt="Icon Qlik Sense" class="foto-tech">
-                </div>
-                <div class="face-tech" id="tech-back">
-                    <img src="static/img/logos/tech-qlik-back.webp" alt="Descrição das funções exercidas em Qlik Sense" class="foto-tech">
-                </div>
-            </div>            
-        </section>
-        <h3 class="tittle-project font-cyber occult" id="projetos">Projetos</h3>
-        <section class="container-projetos occult">
-            <div id="slides">
-                <article class="item" id="item-0">
-                    <figure class="content">                        
-                    </figure>                     
-                </article> 
-                <article class="item" id="item-1" style="background-image: url(static/img/fotos/a4pb-mobile.webp);">
-                    <figure class="content">
-                        <h4 class="font-text">Projeto Real (Ativo)</h4>
-                        <p class="font-text">
-                            No projeto A4PB, fui contratado para desenvolver todo o site da associação, incluindo um design atraente, 
-                            criação de páginas funcionais e responsivas para os usuários. <strong>Tecnologias Utilizadas:</strong>
-                        </p>
-                        <div class="itens-logos-projetos">
-                            <img src="static/img/logos/tech-html.webp" alt="Logo HtML" title="HTML">
-                            <img src="static/img/logos/tech-css.webp" alt="Logo CSS" title="CSS">
-                            <img src="static/img/logos/tech-js.webp" alt="Logo JS" title="JavaScript">
-                        </div>
-                        <div class="btn-links-projetos">
-                            <a href="#" class="cursor-not" onclick="return false;">Repositório</a>
-                            <a href="https://a4pb.com.br/" class="color-visiet" target="_blank">Visitar</a>
-                        </div>
-                    </figure>                     
-                </article>
-                <article class="item" id="item-2" style="background-image: url(static/img/fotos/ecossistema-mobile.webp);">
-                    <figure class="content">
-                        <h4 class="font-text">Projeto Real (Ativo)</h4>
-                        <p class="font-text">
-                            O Projeto Ecossistema de Inovação envolveu a integração de um sistema web com painéis do Qlik Sense, 
-                            com a coleta manual de seus valores e dados. <strong>Tecnologias Utilizadas:</strong>
-                        </p>
-                        <div class="itens-logos-projetos">
-                            <img src="static/img/logos/tech-html.webp" alt="Logo HtML" title="HTML">
-                            <img src="static/img/logos/tech-css.webp" alt="Logo CSS" title="CSS">
-                            <img src="static/img/logos/tech-js.webp" alt="Logo JS" title="JavaScript">
-                            <img src="static/img/logos/tech-qlik.webp" alt="Logo QLIK SENSE" title="QLIK Sense">
-                        </div>
-                        <div class="btn-links-projetos">
-                            <a href="#" class="cursor-not" onclick="return false;">Repositório</a>
-                            <a href="https://davibonni.com.br/ecossistema" class="color-visiet">Visitar</a>
-                        </div>
-                    </figure>                           
-                </article>             
-                <article class="item" id="item-3" style="background-image: url(static/img/fotos/nomuh-mobile.webp);">
-                    <figure class="content">
-                        <h4 class="font-text">Projeto Real (Concluído)</h4>
-                        <p class="font-text">
-                            O projeto Nomuh marcou minha estreia como empreendedor e meu primeiro projeto concreto. Tratava-se de um 
-                            sistema web de busca por medicamentos filtrando suas restrições alérgicas. <strong>Tecnologias Utilizadas:</strong>
-                        </p>
-                        <div class="itens-logos-projetos">
-                            <img src="static/img/logos/tech-html.webp" alt="Logo HtML" title="HTML">
-                            <img src="static/img/logos/tech-css.webp" alt="Logo CSS" title="CSS">
-                            <img src="static/img/logos/tech-js.webp" alt="Logo JS" title="JavaScript">
-                            <img src="static/img/logos/tech-djago.webp" alt="Logo QLIK SENSE" title="Django">
-                        </div>
-                        <div class="btn-links-projetos">
-                            <a href="#" class="cursor-not" onclick="return false;">Repositório</a>
-                            <a href="https://davibonni.com.br/nomuh" class="color-visiet">Visitar</a>
-                        </div>
-                    </figure>                  
-                </article>                              
-                <article class="item" id="item-4" style="background-image: url(static/img/fotos/aprenser-mobile.webp);">
-                    <figure class="content">
-                        <h4 class="font-text">Projeto Portfólio (ativo)</h4>
-                        <p class="font-text">
-                            No âmbito deste projeto, o objetivo era conceber um site de portfólio destinado a potenciais clientes. 
-                            O site foi projetado para destacar habilidades, experiências e conquistas. <strong>Tecnologias Utilizadas:</strong>
-                        </p>
-                        <div class="itens-logos-projetos">
-                            <img src="static/img/logos/tech-html.webp" alt="Logo HtML" title="HTML">
-                            <img src="static/img/logos/tech-css.webp" alt="Logo CSS" title="CSS">
-                            <img src="static/img/logos/tech-js.webp" alt="Logo JS" title="JavaScript">
-                        </div>
-                        <div class="btn-links-projetos">
-                            <a href="https://github.com/daviboni/Aprenser-Cursos" class="color-visiet-hub" target="_blank">Repositório</a>
-                            <a href="https://aprensercurso.netlify.app/" class="color-visiet" target="_blank">Visitar</a>
-                        </div>
-                    </figure>                       
-                </article>
-            </div>
-            <div class="btn-slides" id="btn-slides">
-                <button id="prev"><img src="static/img/icons/seta-esquerda.png" alt="Voltar o Slide"></button>
-                <button id="next"><img src="static/img/icons/seta-direita.png" alt="Passar o Slide"></button>
-            </div>
-        </section>
-        <section class="container-contatos" id="contatos">
-            <h3 class="font-cyber occult">Contatos</h3>
-            <article class="filter-back occult" id="block-contatos">
-                <div class="block-contato-dig">
-                    <p class="font-text">Número:</p>
-                    <p class="font-text">(83) 99955-4197</p>
-                </div>
-                <div class="block-contato-dig">
-                    <p class="font-text">Email:</p>
-                    <p class="font-text">davibonni.designweb@gmail.com</p>
-                </div>
-                <div id="icons-links">
-                    <a href="https://api.whatsapp.com/send?phone=5583999554197&text=Ol%C3%A1%2C%20Davi.%20Visitei%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar" target="_blank">
-                        <img src="static/img/icons/telefone.png" alt="Logo WhatsApp fornecido por Freepik via https://www.flaticon.com/br/autores/freepik">
-                    </a>
-                    <a href="https://www.linkedin.com/in/davi-costa-bonif%C3%A1cio-894921138/" target="_blank">
-                        <img src="static/img/icons/linkedin.svg" alt="Icone do LinkedIn">
-                    </a>
-                    <a href="https://github.com/daviboni/Portifolio-Davi" target="_blank">
-                        <img src="static/img/icons/github.svg" alt="Icone do GitHub">
-                    </a>
-                    <a href="https://www.instagram.com/dtechwebsite/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank">
-                        <img src="static/img/icons/instagram.png" alt="Logo Instagram fornecido por Freepik via https://www.flaticon.com/br/autores/freepik">
-                    </a>
-                </div>
-            </article>
-        </section>
-    </main>
-    <aside id="icons-pg" style="display: none;">
-        <button class="btn-subir">
-            <img src="static/img/icons/seta-cima.png" alt="Icon de seta para cima fornecido por Arkinasi via https://www.flaticon.com/br/autores/arkinasi">
-        </button>
-    </aside>
-    <footer>
-        <div class="container-footer">
-            <div class="footer-logo">
-                <img src="static/img/logos/db.svg" alt="Logo Davi Bonni">
-            </div>        
-            <div id="block-certificados">
-                <h3 class="font-text">Certificados</h3>
+              </div>
+          </section>
+          <section class="block expanded border-left section-3 " id="section-3">
+            <div class="block-tittle">
+                <h2>Projetos</h2>
                 <div>
-                    <a href="https://www.udemy.com/certificate/UC-3c2039e8-18b2-4864-a5d2-2c19d1d3c04e/" target="_blank">Phython</a>
-                    <a href="https://www.udemy.com/certificate/UC-e216c08c-a65c-42a8-ada8-47c540e6819d/" target="_blank">Django Framework</a>
-                    <a href="https://www.udemy.com/certificate/UC-74e2c218-313e-44d7-b284-2b92109719c4/" target="_blank">JavaScript</a>
-                    <a href="https://www.udemy.com/certificate/UC-aede1cd6-bc78-4f2a-afec-c7befc058ec4/" target="_blank">Analista BI</a>
-                    <a href="https://www.udemy.com/certificate/UC-454178b1-a91d-4054-99bd-e7c76705e2b2/" target="_blank">Qlik Sense</a>
-                    <a href="https://www.udemy.com/certificate/UC-7864a3bb-2071-4eaf-a219-30975c630cb3/" target="_blank">Inglês</a>
+                    <h3 class="tittle-first">Meus </h3>
+                    <h3 class="tittle-last">Projetos</h3>
+                </div>                    
+            </div>
+            <div class="container-information" id="container-information-projetos">
+                <img src="static/img/icons/btn-close.png" alt="Botão de Fechar Sobre Mim" class="btn-close">
+                <div class="block-tittle-insede" >
+                    <h2 class="tittle-inside-back" id="title-projetos">Projetos</h2>
+                    <h3 class="tittle-inside-front">Meus<span>Projetos</span></h3>
+                </div>
+                <div class="block-icon-inside" id="block-icon-projetos">
+                    <span></span>
+                    <img src="static/img/icons/icon-projetos.png" alt="icone de Projetos">
+                    <span></span>
+                </div>
+                <div class="container-projetos occult">
+                    <div id="slides">
+                        <article class="item" id="item-0">
+                            <figure class="content">                        
+                            </figure>                     
+                        </article> 
+                        <article class="item" id="item-1" style="background-image: url(static/img/fotos/a4pb-mobile.webp);">
+                            <figure class="content">
+                                <h4 class="font-text">Projeto Real (Ativo)</h4>
+                                <p class="font-text">
+                                    No projeto A4PB, fui contratado para desenvolver todo o site da associação, incluindo um design atraente, 
+                                    criação de páginas funcionais e responsivas para os usuários. <strong>Tecnologias Utilizadas:</strong>
+                                </p>
+                                <div class="itens-logos-projetos">
+                                    <img src="static/img/logos/tech-html.webp" alt="Logo HtML" title="HTML">
+                                    <img src="static/img/logos/tech-css.webp" alt="Logo CSS" title="CSS">
+                                    <img src="static/img/logos/tech-js.webp" alt="Logo JS" title="JavaScript">
+                                </div>
+                                <div class="btn-links-projetos">
+                                    <a href="#" class="cursor-not" onclick="return false;">Repositório</a>
+                                    <a href="https://a4pb.com.br/" class="color-visiet" target="_blank">Visitar</a>
+                                </div>
+                            </figure>                     
+                        </article>
+                        <article class="item" id="item-2" style="background-image: url(static/img/fotos/ecossistema-mobile.webp);">
+                            <figure class="content">
+                                <h4 class="font-text">Projeto Real (Ativo)</h4>
+                                <p class="font-text">
+                                    O Projeto Ecossistema de Inovação envolveu a integração de um sistema web com painéis do Qlik Sense, 
+                                    com a coleta manual de seus valores e dados. <strong>Tecnologias Utilizadas:</strong>
+                                </p>
+                                <div class="itens-logos-projetos">
+                                    <img src="static/img/logos/tech-html.webp" alt="Logo HtML" title="HTML">
+                                    <img src="static/img/logos/tech-css.webp" alt="Logo CSS" title="CSS">
+                                    <img src="static/img/logos/tech-js.webp" alt="Logo JS" title="JavaScript">
+                                    <img src="static/img/logos/tech-qlik.webp" alt="Logo QLIK SENSE" title="QLIK Sense">
+                                </div>
+                                <div class="btn-links-projetos">
+                                    <a href="#" class="cursor-not" onclick="return false;">Repositório</a>
+                                    <a href="https://davibonni.com.br/ecossistema" class="color-visiet">Visitar</a>
+                                </div>
+                            </figure>                           
+                        </article>             
+                        <article class="item" id="item-3" style="background-image: url(static/img/fotos/nomuh-mobile.webp);">
+                            <figure class="content">
+                                <h4 class="font-text">Projeto Real (Concluído)</h4>
+                                <p class="font-text">
+                                    O projeto Nomuh marcou minha estreia como empreendedor e meu primeiro projeto concreto. Tratava-se de um 
+                                    sistema web de busca por medicamentos filtrando suas restrições alérgicas. <strong>Tecnologias Utilizadas:</strong>
+                                </p>
+                                <div class="itens-logos-projetos">
+                                    <img src="static/img/logos/tech-html.webp" alt="Logo HtML" title="HTML">
+                                    <img src="static/img/logos/tech-css.webp" alt="Logo CSS" title="CSS">
+                                    <img src="static/img/logos/tech-js.webp" alt="Logo JS" title="JavaScript">
+                                    <img src="static/img/logos/tech-djago.webp" alt="Logo QLIK SENSE" title="Django">
+                                </div>
+                                <div class="btn-links-projetos">
+                                    <a href="#" class="cursor-not" onclick="return false;">Repositório</a>
+                                    <a href="https://davibonni.com.br/nomuh" class="color-visiet">Visitar</a>
+                                </div>
+                            </figure>                  
+                        </article>                              
+                        <article class="item" id="item-4" style="background-image: url(static/img/fotos/aprenser-mobile.webp);">
+                            <figure class="content">
+                                <h4 class="font-text">Projeto Portfólio (ativo)</h4>
+                                <p class="font-text">
+                                    No âmbito deste projeto, o objetivo era conceber um site de portfólio destinado a potenciais clientes. 
+                                    O site foi projetado para destacar habilidades, experiências e conquistas. <strong>Tecnologias Utilizadas:</strong>
+                                </p>
+                                <div class="itens-logos-projetos">
+                                    <img src="static/img/logos/tech-html.webp" alt="Logo HtML" title="HTML">
+                                    <img src="static/img/logos/tech-css.webp" alt="Logo CSS" title="CSS">
+                                    <img src="static/img/logos/tech-js.webp" alt="Logo JS" title="JavaScript">
+                                </div>
+                                <div class="btn-links-projetos">
+                                    <a href="https://github.com/daviboni/Aprenser-Cursos" class="color-visiet-hub" target="_blank">Repositório</a>
+                                    <a href="https://aprensercurso.netlify.app/" class="color-visiet" target="_blank">Visitar</a>
+                                </div>
+                            </figure>                       
+                        </article>
+                    </div>
+                    <div class="btn-slides" id="btn-slides">
+                        <button id="prev"><img src="static/img/icons/seta-esquerda.png" alt="Voltar o Slide"></button>
+                        <button id="next"><img src="static/img/icons/seta-direita.png" alt="Passar o Slide"></button>
+                    </div>
                 </div>
             </div>
-            <div id="icons-links-footer">
-                <a href="https://api.whatsapp.com/send?phone=5583999554197&text=Ol%C3%A1%2C%20Davi.%20Visitei%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar" target="_blank">
-                    <img src="static/img/icons/telefone.png" alt="Logo WhatsApp fornecido por Freepik via https://www.flaticon.com/br/autores/freepik">
-                </a>
-                <a href="https://www.linkedin.com/in/davi-costa-bonif%C3%A1cio-894921138/" target="_blank">
-                    <img src="static/img/icons/linkedin.svg" alt="Icone do LinkedIn">
-                </a>
-                <a href="https://github.com/daviboni/Portifolio-Davi" target="_blank">
-                    <img src="static/img/icons/github.svg" alt="Icone do GitHub">
-                </a>
-                <a href="https://www.instagram.com/dtechwebsite/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank">
-                    <img src="static/img/icons/instagram.png" alt="Logo Instagram fornecido por Freepik via https://www.flaticon.com/br/autores/freepik">
-                </a>
+          </section>
+          <section class="block expanded border-left section-4" id="section-4">
+            <div class="block-tittle">
+                <h2>Contatos</h2>
+                <div>
+                    <h3 class="tittle-first">Meus </h3>
+                    <h3 class="tittle-last">Contatos</h3>
+                </div>                    
             </div>
-        </div>
-    </footer>
-    <!-- JavaScript-->
-    <script src="static/js/index.js" type="text/javascript"></script>
-    <script src="static/js/menu.js" type="text/javascript"></script>
-    <script src="static/js/icon-asside.js" type="text/javascript"></script>
-</body>
-</html> 
+            <div class="container-information">
+                <img src="static/img/icons/btn-close.png" alt="Botão de Fechar Sobre Mim" class="btn-close">
+                <div class="block-tittle-insede">
+                    <h2 class="tittle-inside-back" id="title-projetos">Contatos</h2>
+                    <h3 class="tittle-inside-front">Meus<span>Contatos</span></h3>
+                </div>
+                <div class="block-icon-inside">
+                    <span></span>
+                    <img src="static/img/icons/contato.png" alt="icone de Projetos">
+                    <span></span>
+                </div>
+                <div class="block-links-contato">
+                    <div class="block-text-contaos">
+                        <h4>Telefone:</h4>
+                        <p>(83) 99955-4197</p>
+                    </div>
+                    <div class="block-text-contaos">
+                        <h4>Telefone:</h4>
+                        <p>davidbonni_live.com</p>
+                    </div>
+                    <div class="block-text-contaos">
+                        <h4>Endereço:</h4>
+                        <p>João Pessoa - PB</p>
+                    </div>
+                    <div id="icons-links-contatos">
+                        <a href="https://api.whatsapp.com/send?phone=5583999554197&amp;text=Ol%C3%A1%2C%20Davi.%20Visitei%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar" target="_blank">
+                            <img src="static/img/icons/whatsapp.png" alt="Logo WhatsApp fornecido por Freepik via https://www.flaticon.com/br/autores/freepik">
+                        </a>
+                        <a href="https://www.linkedin.com/in/davi-costa-bonif%C3%A1cio-894921138/" target="_blank">
+                            <img src="static/img/icons/linkedin.png" alt="Icone do LinkedIn">
+                        </a>
+                        <a href="https://github.com/daviboni/Portifolio-Davi" target="_blank">
+                            <img src="static/img/icons/github.svg" alt="Icone do GitHub">
+                        </a>
+                    </div>
+                </div>
+            </div>
+          </section>
+    </div>
+    <script src="static/js/teste.js" type="text/javascript"></script>
+  </body>
+</html>

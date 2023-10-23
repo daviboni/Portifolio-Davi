@@ -3,6 +3,14 @@
     src: url(../fonts/cyber.otf) format("truetype");
 }
 
+:root{
+    --color-main: #080808;
+    --color-secund: #0e0d0d;
+    --color-emphasis: #5000CA;
+    --color-grey: #EEEEEE;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -19,8 +27,8 @@ header{
     height: 85px;
     position: sticky; 
     z-index: 9;
-    background-color: rgba(0, 0, 0, 0.85);  
-    font-family: cyber;
+    background-color: var(--color-main);  
+    font-family: 'Roboto', Arial, Helve, sans-serif;
     box-shadow: 0px 2px 3px black;
     border-radius: 0;
 }
@@ -85,7 +93,7 @@ header{
 #nav-menu[status="visible"] #icon-hamburger > span:nth-of-type(3) {opacity: 0}
 
 #menu-options{
-    background-color: rgba(78, 1, 103, .93);
+    background-color: var(--color-emphasis);
     width: 100%;
     height: 0;
     z-index: 99;

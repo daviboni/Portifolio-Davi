@@ -6,8 +6,12 @@
     font-display: swap;
 }
 
+
 :root{
-    --color-main: #c92381;
+    --color-main: #080808;
+    --color-secund: #0e0d0d;
+    --color-emphasis: #5000CA;
+    --color-grey: #EEEEEE;
 }
 
 * {
@@ -66,7 +70,8 @@ main{
 #tittle-pg{
     margin-bottom: 8rem;
     text-align: center;
-    color: #0277B5;
+    color: var(--color-emphasis);
+    text-transform: uppercase;
 }
 
 .causa{
@@ -106,7 +111,7 @@ main{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(45deg, #233b7c, #b16d86);
+    background: linear-gradient(45deg, var(--color-emphasis), #b16d86);
 }
 
 .block-demonstrativo{
@@ -153,7 +158,7 @@ main{
 .section-js > h2{
     font-size: 3rem;
     margin-bottom: 5rem;
-    color: #0277B5 ;
+    color: var(--color-emphasis) ;
 }
 
 .section-js img{
@@ -205,16 +210,13 @@ main{
 }
 
 /* Estilos da barra de rolagem */
-::-webkit-scrollbar {width: 12px;}
+::-webkit-scrollbar {background-color: var(--color-secund);}
 
 ::-webkit-scrollbar-thumb {
-    background: #0277B5; /* Gradiente de fundo */
-    border-radius: 6px; /* Raio das bordas do polegar */
+    
+    background-color: var(--color-emphasis);
 }
 
-::-webkit-scrollbar-track {
-    background-color: rgba(0, 0, 0, 0.85);  /* Parte de trás da barra de rolagem */
-}
 
 @media screen and (max-width: 950px){
     .causa {padding: 5rem 0;}
