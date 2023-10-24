@@ -11,10 +11,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 s.classList.remove('full-screen');
             });
             section.classList.add('full-screen');
-            // Atualiza o atributo 'status' do container com base na seção clicada
             container.setAttribute('status', 'visible');
 
-            // Adiciona a classe "up-section" às outras seções do container
             const allSections = document.querySelectorAll('.block');
             allSections.forEach(s => {
                 if (s !== section) {
@@ -32,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 s.classList.remove('up-section');
             });
             container.setAttribute('status', 'hidden');
-            // Remova a classe "up-section" da seção 1
             sectionOne.classList.remove('up-section');
         });
     });
