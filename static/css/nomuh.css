@@ -29,7 +29,7 @@ html, body {font-size: 62.5%;}
 /* Class genericas */
 .wdt-min{width: 100%;}
 
-h1{font-size: 4rem;}
+h1{font-size: 4rem; text-shadow: 1px 5px 6px #585858;}
 
 h2{font-size: 2rem;}
 
@@ -69,8 +69,9 @@ main{
 #tittle-pg{
     margin-bottom: 8rem;
     text-align: center;
-    color: var(--color-emphasis);
-    }
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
 
 .causa{
     width: 100%;

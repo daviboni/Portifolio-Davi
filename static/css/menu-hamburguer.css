@@ -125,7 +125,7 @@ header{
     margin: 0;
 }
 #menu-options > ul > li:hover{
-    background-color: chartreuse;
+    background-color: rgb(8, 8, 9);
 }
 #menu-options > ul > li > a{
     display: flex;
